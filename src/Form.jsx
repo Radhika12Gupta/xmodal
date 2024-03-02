@@ -74,7 +74,7 @@ const Form = () => {
 <form typeof='submit'>
         <h1>Fill Details</h1>
         <h5>Username:</h5>
-        <input type="text" width='100%' id="username" value={username} onChange={(e)=>setUsername(e.target.value)} required/>
+        <input type="text" width='100%' id="#username" value={username} onChange={(e)=>setUsername(e.target.value)} required/>
         <h5>Email Address:</h5>
         <input type="text" width='100%' id="email" value={email} onChange={(e)=>setEmail(e.target.value)}required/>
         <h5>Phone Number:</h5>
@@ -83,7 +83,7 @@ const Form = () => {
         <h5>Date of Birth:</h5>
         <input type="date" width='100%' id='dob' value={dob} onChange={(e)=>setDob(e.target.value)} required/>
            <br/><br/>
-        <button onClick={(e)=>handleSubmit(e)}>Submit</button>
+        <button onClick={(e)=>handleSubmit(e)} className="submit-button">Submit</button>
         </form>  
 
 </div>
